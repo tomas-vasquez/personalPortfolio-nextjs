@@ -1,5 +1,5 @@
 import Loader from "@/componets/Loader";
-import Navbar from "@/componets/Navbar";
+import Navbar from "../componets/Navbar";
 
 export default function Home() {
   return (
@@ -7,7 +7,17 @@ export default function Home() {
       <main>
         {/* <Loader /> */}
         <Navbar />
-        <div>csdcsd</div>
+        <h1>fqrgfqfefjqeiofqoiejqoie</h1>
+        <h1>fqrgfqfefjqeiofqoiejqoie</h1>
+        <h1>fqrgfqfefjqeiofqoiejqoie</h1>
+        <h1>fqrgfqfefjqeiofqoiejqoie</h1>
+        <h1>fqrgfqfefjqeiofqoiejqoie</h1>
+        <h1>fqrgfqfefjqeiofqoiejqoie</h1>
+        <h1>fqrgfqfefjqeiofqoiejqoie</h1>
+        <h1>fqrgfqfefjqeiofqoiejqoie</h1>
+        <h1>fqrgfqfefjqeiofqoiejqoie</h1>
+        <h1>fqrgfqfefjqeiofqoiejqoie</h1>
+        <h1>fqrgfqfefjqeiofqoiejqoie</h1>
       </main>
     </>
   );
