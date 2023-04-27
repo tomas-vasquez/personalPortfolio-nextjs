@@ -14,25 +14,6 @@ import useScrollDirection from "@/hooks/useScrollDirection";
 import anime from "animejs";
 
 const myNavbar = () => {
-  const animate = () => {
-    const loader = anime.timeline();
-
-    loader
-      .add({
-        targets: "#logo path",
-        delay: 300,
-        duration: 2000,
-        easing: "easeInOutQuart",
-        strokeDashoffset: [anime.setDashoffset, 0],
-      })
-      .add({
-        targets: "#logo #letter",
-        duration: 700,
-        easing: "easeInOutQuart",
-        opacity: 1,
-      });
-  };
-
   const scrollDirection = useScrollDirection("down");
   const [scrolledToTop, setScrolledToTop] = useState(true);
 
@@ -41,7 +22,6 @@ const myNavbar = () => {
   const toggleNavbar = () => setCollapsed(!collapsed);
 
   useEffect(() => {
-    animate();
     window.addEventListener("scroll", () => {
       setScrolledToTop(window.pageYOffset < 50);
       setCollapsed(true);
