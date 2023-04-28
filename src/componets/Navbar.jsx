@@ -11,7 +11,6 @@ import {
 import IconLoader from "./IconLoader";
 
 import useScrollDirection from "@/hooks/useScrollDirection";
-import anime from "animejs";
 
 const myNavbar = () => {
   const scrollDirection = useScrollDirection("down");

@@ -4,7 +4,7 @@ export default class About extends Component {
   render() {
     return (
       <div id="about" className="section d-flex">
-        <div className="container-lg my-auto">
+        <div className="my-auto">
           <div className="row">
             <div className="col-12 col-md-6 col-lg-8 p-4 ">
               <h2 className="numbered-heading">About Me</h2>

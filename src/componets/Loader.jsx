@@ -3,7 +3,7 @@ import anime from "animejs";
 import IconLoader from "./IconLoader";
 
 function Loader() {
-  const [isFinalized, setIsFinalized] = useState(false);
+  const [isFinalized, setIsFinalized] = useState(true);
 
   const animate = () => {
     const loader = anime.timeline({

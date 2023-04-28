@@ -26,16 +26,16 @@ export default class Contact extends Component {
               </div>
             </div>
           </div>{" "}
-          <footer className=" ">
-            <div>
-              <a>
-                <div>
-                  powered width <Icons icon="hear" /> by tomas
-                </div>
-              </a>
-            </div>
-          </footer>
         </div>
+        <footer className=" ">
+          <div>
+            <a>
+              <div>
+                powered width <Icons icon="hear" /> by tomas
+              </div>
+            </a>
+          </div>
+        </footer>
       </>
     );
   }
