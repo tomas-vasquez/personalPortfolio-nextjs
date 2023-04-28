@@ -1,0 +1,67 @@
+
+canvas
+  display: block
+
+.Audio
+  min-height: 400px
+  display: flex
+  flex-direction: column
+  font-size: calc(10px + 2vmin)
+  font-family: var(--font-mono)
+
+.player
+  display: flex
+  flex-direction: column
+  justify-content: center
+  margin: auto
+  position: relative
+
+.controls
+  display: grid
+  grid-template: 'prev play next'
+  justify-content: center
+  position: relative
+  z-index: 2
+
+.player .song
+  text-align: center
+  color: rgb(var(--colorTextLight))
+  position: relative
+  z-index: 2
+  top: -2rem
+  width: 100%
+
+  & .artist
+    font-size: 22px
+    margin-bottom: 5px
+
+  & .name
+    font-size: 18px
+
+.soundControl
+  cursor: pointer
+  position: relative
+  text-align: center
+
+  &.disable
+    .btn-mute
+      display: inline
+    .btn-volumeUp
+      display: none
+.btn-mute
+  display: none
+
+.player .time
+  text-align: center
+  color: var(--green)
+  position: relative
+  font-size: 18px
+  top: 4rem
+
+#player-canvas
+  position: absolute
+  width: 600px
+  height: 600px
+  display: flex
+  align-self: center
+  transform: scale(-1.15)

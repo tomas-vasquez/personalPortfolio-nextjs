@@ -13,7 +13,7 @@ export default function Home() {
         <Loader />
         <Navbar />
         <Aside />
-        <Container sm>
+        <Container>
           <Hero />
           <About />
           <Contact />

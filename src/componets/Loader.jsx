@@ -3,12 +3,12 @@ import anime from "animejs";
 import IconLoader from "./IconLoader";
 
 function Loader() {
-  const [isFinalized, setIsFinalized] = useState(true);
+  const [isFinalized, setIsFinalized] = useState(false);
 
   const animate = () => {
     const loader = anime.timeline({
       complete: () => {
-        setIsFinalized(true);
+        // setIsFinalized(true);
       },
     });
 
@@ -25,14 +25,14 @@ function Loader() {
         duration: 600,
         easing: "easeInOutQuart",
         opacity: 1,
-      })
-      .add({
-        targets: "#loader",
-        delay: 1000,
-        duration: 500,
-        easing: "easeInOutQuart",
-        opacity: 0,
       });
+    // .add({
+    //   targets: "#loader",
+    //   delay: 1000,
+    //   duration: 500,
+    //   easing: "easeInOutQuart",
+    //   opacity: 0,
+    // });
   };
 
   useEffect(() => {
@@ -43,6 +43,7 @@ function Loader() {
     <div id="loader" className={isFinalized ? "d-none" : ""}>
       <div className="logo-wrapper">
         <IconLoader />
+        <div className="btn btn-primary">clickme!</div>
       </div>
     </div>
   );

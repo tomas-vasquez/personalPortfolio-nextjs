@@ -37,19 +37,14 @@ module.exports = {
 
   tracks: [
     {
-      name: "Takeoff",
-      artist: "FAYZED",
-      url: "/music/Dubstep, Trap, Bass Drop, instrumental, Beat [NoCopyrightSound] [FREE USE MUSIC] - FAYZED - Takeoff (320  kbps).mp3",
+      song: "Four-Seasons-Winter-LInv",
+      artist: "Vivaldi",
+      url: "Vivaldi-Four-Seasons-Winter-LInv.mp3",
     },
     {
-      name: "Indio",
-      artist: "Elias Ayaviri",
-      url: "/music/INDIO ELIAS AYAVIRI INSTRUMENTAL® (320  kbps).mp3",
-    },
-    {
-      name: "Munasqechay",
-      artist: "Los Kjarkas",
-      url: "/music/Los Kjarkas - Munasqechay (Karaoke).mp3",
+      song: "Four-Seasons-Winter-LInv2",
+      artist: "Vivaldi",
+      url: "Vivaldi-Four-Seasons-Winter-LInv.mp3",
     },
   ],
 

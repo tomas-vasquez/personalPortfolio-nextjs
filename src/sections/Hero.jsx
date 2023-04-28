@@ -1,3 +1,4 @@
+import Audio from "@/componets/Audio";
 import { Row, Col } from "reactstrap";
 
 const Hero = () => {
@@ -9,7 +10,7 @@ const Hero = () => {
           width: "100%",
         }}
       >
-        <Col xs="12" md="6" lg="12" className="p-4">
+        <Col xs="12" md="6" lg="7" className="p-4">
           <h1>Hi, my name is</h1>
           <h2 className="big-heading">Tomás Vasquez</h2>
           {/* <h3 className="big-heading">I am a web builder</h3> */}
@@ -19,8 +20,8 @@ const Hero = () => {
           </p>
           <a className="btn btn-primary email-link">Get In Touch</a>
         </Col>
-        <Col xs="12" md="6" lg="5" className="my-auto">
-          {<div style={{ transitionDelay: `100ms` }}></div>}
+        <Col xs="12" md="6" lg="5">
+          <Audio />
         </Col>
       </div>
     </div>
