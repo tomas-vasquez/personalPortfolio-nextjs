@@ -1,7 +1,11 @@
 import Audio from "@/componets/Audio";
-import { Row, Col } from "reactstrap";
+import { useContext } from "react";
+import IsReadyContext from "../contexts/IsReadyContext";
+import { Col } from "reactstrap";
 
 const Hero = () => {
+  const { isReady } = useContext(IsReadyContext);
+
   return (
     <div id="hero" className="section d-flex  ">
       <div
@@ -12,6 +16,7 @@ const Hero = () => {
       >
         <Col xs="12" md="6" lg="7" className="p-4">
           <h1>Hi, my name is</h1>
+          {"" + isReady}
           <h2 className="big-heading">Tomás Vasquez</h2>
           {/* <h3 className="big-heading">I am a web builder</h3> */}
           <p className="mb-4">

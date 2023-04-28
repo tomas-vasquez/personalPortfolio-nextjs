@@ -596,10 +596,6 @@ var Player = {
     }
     Framer.setLoadingPercent(1);
     Scene.init();
-    setTimeout(() => {
-      const playButton = document.querySelector(".play");
-      playButton.click();
-    }, 2000);
   },
 
   loadTrack: function (index) {

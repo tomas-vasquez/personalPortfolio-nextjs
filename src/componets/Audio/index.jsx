@@ -1,14 +1,23 @@
 import { tracks } from "../../config";
-import { useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import Player from "./Player";
 import Icons from "../Icons";
+import IsReadyContext from "@/contexts/IsReadyContext";
 
 function Audio() {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const { isReady } = useContext(IsReadyContext);
+
   useEffect(() => {
     Player.tracks = tracks;
     Player.autoplay = true;
     Player.init();
-  }, []);
+    if (isReady && !isPlaying) {
+      setIsPlaying(true);
+      const playButton = document.querySelector(".play");
+      playButton.click();
+    }
+  }, [isReady]);
 
   return (
     <div className="Audio">
