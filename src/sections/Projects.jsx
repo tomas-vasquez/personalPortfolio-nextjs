@@ -1,5 +1,6 @@
 import Icons from "@/componets/Icons";
 import { projects } from "@/config";
+import ScrollAnimation from "react-animate-on-scroll";
 import { Col } from "reactstrap";
 
 const Projects = () => {
@@ -15,45 +16,54 @@ const Projects = () => {
           <h2>Projects</h2>
           <div class="project-container mb-5">
             {projects.map((project, index) => (
-              <div
+              <ScrollAnimation
                 key={index}
-                class={"project " + (index % 2 === 0 ? "project-rtl" : "")}
+                className="player"
+                animateIn={
+                  index % 2 === 0
+                    ? "animate__fadeInRight"
+                    : "animate__fadeInLeft"
+                }
               >
-                <div class="project-content">
-                  <div class="project-details">
-                    <h4 class="project-title">{project.title}</h4>
-                    <p>
-                      {project.details}
-                      <ul>
-                        {project.techList.map((tech, index) => (
-                          <li key={index}>{tech}</li>
-                        ))}
-                      </ul>
-                    </p>
+                <div
+                  class={"project " + (index % 2 === 0 ? "project-rtl" : "")}
+                >
+                  <div class="project-content">
+                    <div class="project-details">
+                      <h4 class="project-title">{project.title}</h4>
+                      <p>
+                        {project.details}
+                        <ul>
+                          {project.techList.map((tech, index) => (
+                            <li key={index}>{tech}</li>
+                          ))}
+                        </ul>
+                      </p>
 
-                    <a
-                      href={project.externalLink}
-                      className="btn btn-primary mt-4 py-1 px-4 me-2"
-                    >
-                      preview <Icons icon="external" />
-                    </a>
-                    <a
-                      href={project.codeLink}
-                      className="btn btn-primary mt-4 py-1 px-4"
-                    >
-                      code <Icons icon="github" />
-                    </a>
+                      <a
+                        href={project.externalLink}
+                        className="btn btn-primary mt-4 py-1 px-4 me-2"
+                      >
+                        preview <Icons icon="external" />
+                      </a>
+                      <a
+                        href={project.codeLink}
+                        className="btn btn-primary mt-4 py-1 px-4"
+                      >
+                        code <Icons icon="github" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="project-img">
+                    <img
+                      className="img-fluid "
+                      src="/featured/capture.jpg"
+                      alt=""
+                    />
                   </div>
                 </div>
-
-                <div class="project-img">
-                  <img
-                    className="img-fluid "
-                    src="/featured/capture.jpg"
-                    alt=""
-                  />
-                </div>
-              </div>
+              </ScrollAnimation>
             ))}
           </div>
         </Col>

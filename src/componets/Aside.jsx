@@ -6,7 +6,10 @@ export default class Aside extends Component {
   render() {
     return (
       <>
-        <div className="aside aside-left">
+        <div
+          className="aside aside-left animate__animated animate__fadeInLeft"
+          style={{ "animation-delay": "0.7s" }}
+        >
           <div className="wrapper">
             {socialMedia &&
               socialMedia.map(({ url, name }, i) => (
@@ -18,10 +21,13 @@ export default class Aside extends Component {
               ))}
           </div>
         </div>
-        <div className="aside  aside-right">
+        <div
+          className="aside  aside-right animate__animated animate__fadeInRight"
+          style={{ "animation-delay": "0.7s" }}
+        >
           <div className="wrapper">
             <a href={`mailto:${email}`} target="_blank">
-              <Icons icon="gmail" className="fa-rotate-90" /> {email}
+              {email}
             </a>
           </div>
         </div>

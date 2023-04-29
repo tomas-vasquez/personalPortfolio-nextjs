@@ -3,6 +3,7 @@ import { useContext, useEffect, useState } from "react";
 import Player from "./Player";
 import Icons from "../Icons";
 import IsReadyContext from "@/contexts/IsReadyContext";
+import ScrollAnimation from "react-animate-on-scroll";
 
 function Audio(props) {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -21,7 +22,7 @@ function Audio(props) {
 
   return (
     <div className="Audio mx-auto">
-      <div className="player">
+      <ScrollAnimation className="player" animateIn="animate__fadeInRight">
         <canvas id="player-canvas"></canvas>
         <div className="song">
           <div className="artist">Kavinsky</div>
@@ -87,7 +88,7 @@ function Audio(props) {
           />
         </p> */}
         <div className="time">00:00</div>
-      </div>
+      </ScrollAnimation>
     </div>
   );
 }

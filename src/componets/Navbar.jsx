@@ -15,7 +15,6 @@ import useScrollDirection from "@/hooks/useScrollDirection";
 const myNavbar = () => {
   const scrollDirection = useScrollDirection("down");
   const [scrolledToTop, setScrolledToTop] = useState(true);
-
   const [collapsed, setCollapsed] = useState(true);
 
   const toggleNavbar = () => setCollapsed(!collapsed);
@@ -37,10 +36,9 @@ const myNavbar = () => {
         (scrollDirection === "down" && !scrolledToTop ? " hidden-navbar" : "")
       }
     >
-      {/* <StyledNav> */}
       <NavbarBrand href="/">
         <div id="brand-logo">
-          <div className="logo-wrapper">
+          <div className="logo-wrapper animate__animated animate__fadeInDown">
             <IconLoader />
           </div>
         </div>
@@ -49,22 +47,38 @@ const myNavbar = () => {
       <Collapse isOpen={!collapsed} navbar>
         <Nav navbar className="ms-auto py-2 py-lg-0">
           <NavItem>
-            <Link href="domain" className="nav-item nav-link">
+            <Link
+              href="domain"
+              className="nav-item nav-link animate__animated animate__fadeInDown"
+            >
+              Begin
+            </Link>
+          </NavItem>
+          <NavItem>
+            <Link
+              href="domain"
+              style={{ "animation-delay": "0.2s" }}
+              className="nav-item nav-link animate__animated animate__fadeInDown"
+            >
               About
             </Link>
           </NavItem>
+
           <NavItem>
-            <Link href="domain.html" className="nav-item nav-link">
-              Experience
-            </Link>
-          </NavItem>
-          <NavItem>
-            <Link href="contact.html" className="nav-item nav-link">
+            <Link
+              href="contact.html"
+              style={{ "animation-delay": "0.3s" }}
+              className="nav-item nav-link animate__animated animate__fadeInDown"
+            >
               Work
             </Link>
           </NavItem>
           <NavItem>
-            <Link href="contact.html" className="nav-item nav-link">
+            <Link
+              href="#contact"
+              style={{ "animation-delay": "0.5s" }}
+              className="nav-item nav-link animate__animated animate__fadeInDown"
+            >
               Contact
             </Link>
           </NavItem>
