@@ -7,6 +7,7 @@ import Aside from "@/componets/Aside";
 import Footer from "@/sections/Footer";
 import { useContext } from "react";
 import IsReadyContext from "@/contexts/IsReadyContext";
+import Projects from "@/sections/Projects";
 
 export default function Home() {
   const { isReady } = useContext(IsReadyContext);
@@ -22,6 +23,7 @@ export default function Home() {
             <div>
               <Hero />
               <About />
+              <Projects />
               <Contact />
             </div>
             <Footer />

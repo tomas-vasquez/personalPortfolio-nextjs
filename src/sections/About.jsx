@@ -1,3 +1,5 @@
+import Icons from "@/componets/Icons";
+import { skills } from "@/config";
 import React, { Component } from "react";
 import { Col } from "reactstrap";
 
@@ -28,6 +30,19 @@ export default class About extends Component {
               <p>
                 Here are a few technologies I've been working with recently:
               </p>
+              <ul className="skills-list">
+                {skills.map((skill, i) => (
+                  <li key={i}>
+                    <Icons
+                      icon={skill}
+                      style={{
+                        fontSize: "60px",
+                        color: "var(--colorText)",
+                      }}
+                    />
+                  </li>
+                ))}
+              </ul>
             </div>
           </Col>
           <Col className="d-flex" xs="12" md="6" lg="5">
