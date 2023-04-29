@@ -39,7 +39,7 @@ module.exports = {
     {
       song: "Four-Seasons-Winter-LInv",
       artist: "Vivaldi",
-      url: "Vivaldi-Four-Seasons-Winter-LInv.mp3",
+      url: "songs/Vivaldi-Four-Seasons-Winter-LInv.mp3",
     },
     {
       song: "Four-Seasons-Winter-LInv2",
