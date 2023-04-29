@@ -426,7 +426,7 @@ var Controls = {
   initHandlers: function () {
     this.initPlayButton();
     this.initPauseButton();
-    this.initSoundButton();
+    // this.initSoundButton();
     this.initPrevSongButton();
     this.initNextSongButton();
     this.initTimeHandler();
@@ -454,19 +454,19 @@ var Controls = {
     });
   },
 
-  initSoundButton: function () {
-    var that = this;
-    this.soundButton = document.querySelector(".soundControl");
-    this.soundButton.addEventListener("click", function () {
-      if (that.soundButton.classList.contains("disable")) {
-        that.soundButton.classList.remove("disable");
-        Player.unmute();
-      } else {
-        that.soundButton.classList.add("disable");
-        Player.mute();
-      }
-    });
-  },
+  // initSoundButton: function () {
+  //   var that = this;
+  //   this.soundButton = document.querySelector(".soundControl");
+  //   this.soundButton.addEventListener("click", function () {
+  //     if (that.soundButton.classList.contains("disable")) {
+  //       that.soundButton.classList.remove("disable");
+  //       Player.unmute();
+  //     } else {
+  //       that.soundButton.classList.add("disable");
+  //       Player.mute();
+  //     }
+  //   });
+  // },
 
   initPrevSongButton: function () {
     var that = this;

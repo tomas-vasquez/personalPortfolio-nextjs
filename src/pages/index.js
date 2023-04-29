@@ -3,21 +3,32 @@ import Navbar from "../componets/Navbar";
 import Hero from "@/sections/Hero";
 import About from "@/sections/About";
 import Contact from "@/sections/Contact";
-import { Container } from "reactstrap";
 import Aside from "@/componets/Aside";
+import Footer from "@/sections/Footer";
+import { useContext } from "react";
+import IsReadyContext from "@/contexts/IsReadyContext";
 
 export default function Home() {
+  const { isReady } = useContext(IsReadyContext);
+
   return (
     <>
       <main>
         <Loader />
-        <Navbar />
-        <Aside />
-        <Container>
-          <Hero />
-          <About />
-          <Contact />
-        </Container>
+        {isReady ? (
+          <>
+            <Navbar />
+            <Aside />
+            <div>
+              <Hero />
+              <About />
+              <Contact />
+            </div>
+            <Footer />
+          </>
+        ) : (
+          <></>
+        )}
       </main>
     </>
   );

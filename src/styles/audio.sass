@@ -8,6 +8,14 @@ canvas
   flex-direction: column
   font-size: calc(10px + 2vmin)
   font-family: var(--font-mono)
+  transform: scale(0.8)
+
+  @media (min-width: 768px)
+    margin-top: 150px
+
+  @media (min-width: 1200px)
+    margin-top: 0px
+    transform: scale(1)
 
 .player
   display: flex
@@ -28,7 +36,6 @@ canvas
   color: rgb(var(--colorTextLight))
   position: relative
   z-index: 2
-  top: -2rem
   width: 100%
 
   & .artist
@@ -56,7 +63,6 @@ canvas
   color: var(--green)
   position: relative
   font-size: 18px
-  top: 4rem
 
 #player-canvas
   position: absolute
@@ -64,4 +70,4 @@ canvas
   height: 600px
   display: flex
   align-self: center
-  transform: scale(-1.15)
+  transform: scale(.85)

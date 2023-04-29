@@ -4,7 +4,7 @@ import Player from "./Player";
 import Icons from "../Icons";
 import IsReadyContext from "@/contexts/IsReadyContext";
 
-function Audio() {
+function Audio(props) {
   const [isPlaying, setIsPlaying] = useState(false);
   const { isReady } = useContext(IsReadyContext);
 
@@ -20,7 +20,7 @@ function Audio() {
   }, [isReady]);
 
   return (
-    <div className="Audio">
+    <div className="Audio mx-auto">
       <div className="player">
         <canvas id="player-canvas"></canvas>
         <div className="song">
@@ -74,7 +74,7 @@ function Audio() {
           </div>
         </div>
 
-        <p className="soundControl">
+        {/* <p className="soundControl">
           <Icons
             className="btn-mute"
             icon="mute"
@@ -85,7 +85,7 @@ function Audio() {
             icon="volumeUp"
             style={{ cursor: "pointer" }}
           />
-        </p>
+        </p> */}
         <div className="time">00:00</div>
       </div>
     </div>
