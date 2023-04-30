@@ -35,7 +35,7 @@ export default class About extends Component {
                   Here are a few technologies I've been working with recently:
                 </p>
 
-                <ul className="skills-list">
+                <ul className="skills-list mt-4">
                   {skills.map((skill, index) => (
                     <ScrollAnimation
                       animateOnce
@@ -47,7 +47,7 @@ export default class About extends Component {
                         <Icons
                           icon={skill}
                           style={{
-                            fontSize: "60px",
+                            fontSize: "50px",
                             color: "var(--colorText)",
                           }}
                         />

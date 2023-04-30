@@ -89,5 +89,5 @@ module.exports = {
     },
   ],
 
-  skills: ["react", "nextjs", "javascript", "css", "javascript"],
+  skills: ["html5", "react", "nextjs", "mongo", "mysql", "docker"],
 };

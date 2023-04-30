@@ -11,7 +11,6 @@ import {
   faUser,
   faRocket,
   faArchive,
-  faBriefcase,
   faMapPin,
   faCircle,
   faFile,
@@ -47,7 +46,15 @@ import {
   faFirefoxBrowser,
   faDocker,
   faHtml5,
+  faMonero,
 } from "@fortawesome/free-brands-svg-icons";
+
+import { GiMongolia } from "react-icons/gi";
+import Mongo from "./mongodb-svgrepo-com.svg";
+import Mysql from "./mariadb-svgrepo-com.svg";
+import Next from "./nextjs-fill-svgrepo-com.svg";
+
+import Image from "next/image";
 
 const getIcon = (icon) => {
   switch (icon) {
@@ -78,8 +85,8 @@ const getIcon = (icon) => {
     case "pointer":
       return faMapPin;
 
-    case "briefcase":
-      return faBriefcase;
+    // case "briefcase":
+    //   return faBriefcase;
 
     case "archive":
       return faArchive;
@@ -134,7 +141,7 @@ const getIcon = (icon) => {
     case "node":
       return faNodeJs;
 
-    case "js":
+    case "javascript":
       return faJsSquare;
 
     case "react":
@@ -187,5 +194,33 @@ export default (props) => {
     return <FontAwesomeIcon {...props} icon={faIcon} />;
   }
 
-  return <FontAwesomeIcon {...props} icon={faTimes} />;
+  var icon = null;
+
+  switch (props.icon) {
+    case "mongo":
+      icon = Mongo;
+      break;
+
+    case "mysql":
+      icon = Mysql;
+      break;
+
+    case "nextjs":
+      icon = Next;
+      break;
+  }
+
+  if (icon) {
+    return (
+      <Image
+        style={{
+          width: props.style.fontSize,
+          height: props.style.fontSize,
+        }}
+        src={icon}
+      />
+    );
+  } else {
+    return <FontAwesomeIcon {...props} icon={faTimes} />;
+  }
 };
