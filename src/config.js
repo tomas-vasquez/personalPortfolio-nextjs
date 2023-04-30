@@ -42,6 +42,11 @@ module.exports = {
       url: "songs/Ella Baila Sola - (Video Oficial) - Eslabon Armado y Peso Pluma - DEL Records 2023.mp3",
     },
     {
+      song: "Winter (A.L.T.C. Remix)",
+      artist: "Vivaldi",
+      url: "songs/Winter - Vivaldi (A.L.T.C. Remix).mp3",
+    },
+    {
       song: "Four-Seasons-Winter-LInv",
       artist: "Vivaldi",
       url: "songs/Vivaldi-Four-Seasons-Winter-LInv.mp3",

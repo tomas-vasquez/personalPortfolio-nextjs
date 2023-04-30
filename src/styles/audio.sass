@@ -1,7 +1,3 @@
-
-canvas
-  display: block
-
 .Audio
   min-height: 400px
   display: flex
@@ -9,65 +5,127 @@ canvas
   font-size: calc(10px + 2vmin)
   font-family: var(--font-mono)
   transform: scale(0.8)
+  margin-top: auto
+  margin-bottom: auto
 
   @media (min-width: 768px)
-    margin-top: 150px
+    padding-top: 170px
 
   @media (min-width: 1200px)
     margin-top: 0px
+    padding-top: 100px
     transform: scale(1)
 
-.player
+.Audio-link
+  color: #61dafb
+
+.Player
   display: flex
   flex-direction: column
   justify-content: center
   margin: auto
   position: relative
+  height: 360px
+  width: 360px
 
-.controls
-  display: grid
-  grid-template: 'prev play next'
-  justify-content: center
-  position: relative
-  z-index: 2
+  .song-info
+    color: rgba(97, 218, 251, 0.8)
+    position: absolute
+    text-align: center
+    z-index: 2
+    top: 3em
+    width: 100%
 
-.player .song
-  text-align: center
-  color: rgb(var(--colorTextLight))
-  position: relative
-  z-index: 2
-  width: 100%
-
-  & .artist
+  .song-artist
+    display: flex
+    justify-content: center
     font-size: 22px
-    margin-bottom: 5px
+    margin-bottom: 0.5rem
 
-  & .name
-    font-size: 18px
+    .song-name
+      display: flex
+      justify-content: center
+      font-size: 18px
 
-.soundControl
-  cursor: pointer
-  position: relative
-  text-align: center
+  .controls
+    display: grid
+    grid-template: "prev play next"
+    justify-content: center
+    position: relative
+    z-index: 2
 
-  &.disable
-    .btn-mute
-      display: inline
-    .btn-volumeUp
-      display: none
-.btn-mute
-  display: none
+    .pause-play-song
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      // border: rgba(97, 218, 251, 0.8) 3px solid
+      // border-radius: 50%
+      padding: 0.4rem
+      width: 104px
+      height: 104px
 
-.player .time
-  text-align: center
-  color: var(--green)
-  position: relative
-  font-size: 18px
+    .prev-song
+      display: flex
+      flex-direction: column
+      justify-content: center
 
-#player-canvas
+    .next-song
+      display: flex
+      flex-direction: column
+      justify-content: center
+
+  .song-footer
+    color: rgba(97, 218, 251, 0.8)
+    position: absolute
+    z-index: 2
+    bottom: 2em
+    width: 100%
+
+    .song-gain
+      display: flex
+      justify-content: center
+      font-size: 22px
+      margin-top: 0.5rem
+
+    .song-duration
+      display: flex
+      justify-content: center
+      font-size: 18px
+
+#Player-canvas
   position: absolute
   width: 600px
   height: 600px
   display: flex
   align-self: center
-  transform: scale(.85)
+
+.loader
+  display: inline-block
+  position: relative
+  width: 64px
+  height: 64px
+
+  div
+    position: absolute
+    // border: 4px solid rgba(97, 218, 251, 0.8)
+    opacity: 1
+    border-radius: 50%
+    animation: loader 1s cubic-bezier(0, 0.2, 0.8, 1) infinite
+    &:nth-child(2)
+      animation-delay: -0.5s
+
+@keyframes loader
+  0%
+    top: 32px
+    left: 32px
+    width: 0
+    height: 0
+    opacity: 1
+
+  100%
+    top: 0px
+    left: 0px
+    width: 64px
+    height: 64px
+    opacity: 0
