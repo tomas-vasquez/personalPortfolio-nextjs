@@ -1,4 +1,4 @@
-import Audio from "@/componets/Audio";
+import Audio from "@/componets/audio";
 import { useContext } from "react";
 import IsReadyContext from "../contexts/IsReadyContext";
 import { Col } from "reactstrap";
@@ -14,16 +14,13 @@ const Hero = () => {
         }}
       >
         <Col className="my-5" xs="12" md="6" lg="7">
-          <ScrollAnimation animateIn="animate__fadeInUp">
+          <ScrollAnimation animateOnce animateIn="animate__fadeInUp">
             <h1>Hi, my name is</h1>
-          </ScrollAnimation>
 
-          <ScrollAnimation animateIn="animate__fadeInUp">
             <h2 className="big-heading">Tomás Vasquez</h2>
-          </ScrollAnimation>
 
-          {/* <h3 className="big-heading">I am a web builder</h3> */}
-          <ScrollAnimation animateIn="animate__fadeInUp">
+            {/* <h3 className="big-heading">I am a web builder</h3> */}
+
             <p
               className="mb-4 animate__animated animate__fadeInUp"
               style={{ imationDelay: "0.7s" }}
@@ -38,9 +35,7 @@ const Hero = () => {
               I'm a software engineer based in Bolivia specializing in building
               web sites and applications and everything in between.
             </p>
-          </ScrollAnimation>
 
-          <ScrollAnimation animateIn="animate__fadeInUp">
             <dir className="d-flex p-0">
               <a
                 className="btn btn-primary email-link mt-4 mx-auto mx-md-0 animate__animated animate__fadeInUp"

@@ -17,8 +17,8 @@ const Projects = () => {
           <div className="project-container mb-5">
             {projects.map((project, index) => (
               <ScrollAnimation
+                animateOnce
                 key={index}
-                className="player"
                 animateIn={
                   index % 2 === 0
                     ? "animate__fadeInRight"
@@ -27,10 +27,10 @@ const Projects = () => {
               >
                 <div
                   className={
-                    "project " + (index % 2 === 0 ? "project-rtl" : "")
+                    "project rounded " + (index % 2 === 0 ? "project-rtl" : "")
                   }
                 >
-                  <div className="project-content">
+                  <div className="project-content shadow">
                     <div className="project-details">
                       <h4 className="project-title">{project.title}</h4>
                       <div className="project-description">
@@ -57,7 +57,7 @@ const Projects = () => {
                     </div>
                   </div>
 
-                  <div className="project-img">
+                  <div className="project-img shadow">
                     <img
                       className="img-fluid "
                       src="/featured/capture.jpg"

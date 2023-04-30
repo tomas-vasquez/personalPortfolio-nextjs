@@ -15,7 +15,7 @@ export default class About extends Component {
           }}
         >
           <Col className="my-5" xs="12" md="6" lg="7">
-            <ScrollAnimation animateIn="animate__fadeInLeft">
+            <ScrollAnimation animateOnce animateIn="animate__fadeInLeft">
               <h2 className="numbered-heading">About Me</h2>
 
               <div>
@@ -38,6 +38,7 @@ export default class About extends Component {
                 <ul className="skills-list">
                   {skills.map((skill, index) => (
                     <ScrollAnimation
+                      animateOnce
                       key={index}
                       animateIn="animate__fadeInUp"
                       delay={index * 200}
@@ -59,7 +60,7 @@ export default class About extends Component {
           </Col>
           <Col className="d-flex" xs="12" md="6" lg="5">
             <div className="my-auto p-5">
-              <ScrollAnimation animateIn="animate__fadeInRight">
+              <ScrollAnimation animateOnce animateIn="animate__fadeInRight">
                 <img
                   className="img"
                   style={{ width: "100%" }}

@@ -11,7 +11,11 @@ export default class Contact extends Component {
         <div id="contact" className="container section">
           <div className="row my-auto">
             <div className="my-auto pt-5  text-center ">
-              <ScrollAnimation className="player" animateIn="animate__fadeInUp">
+              <ScrollAnimation
+                animateOnce
+                className="player"
+                animateIn="animate__fadeInUp"
+              >
                 <h2 className="numbered-heading overline">Contact</h2>
 
                 <h3 className="mt-4 mb-3">What’s Next?</h3>
