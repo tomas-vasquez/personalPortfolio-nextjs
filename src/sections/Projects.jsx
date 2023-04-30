@@ -14,7 +14,7 @@ const Projects = () => {
       >
         <Col className="my-5" xs="12">
           <h2>Projects</h2>
-          <div class="project-container mb-5">
+          <div className="project-container mb-5">
             {projects.map((project, index) => (
               <ScrollAnimation
                 key={index}
@@ -26,19 +26,21 @@ const Projects = () => {
                 }
               >
                 <div
-                  class={"project " + (index % 2 === 0 ? "project-rtl" : "")}
+                  className={
+                    "project " + (index % 2 === 0 ? "project-rtl" : "")
+                  }
                 >
-                  <div class="project-content">
-                    <div class="project-details">
-                      <h4 class="project-title">{project.title}</h4>
-                      <p>
-                        {project.details}
+                  <div className="project-content">
+                    <div className="project-details">
+                      <h4 className="project-title">{project.title}</h4>
+                      <div className="project-description">
+                        <p>{project.details}</p>
                         <ul>
                           {project.techList.map((tech, index) => (
                             <li key={index}>{tech}</li>
                           ))}
                         </ul>
-                      </p>
+                      </div>
 
                       <a
                         href={project.externalLink}
@@ -55,7 +57,7 @@ const Projects = () => {
                     </div>
                   </div>
 
-                  <div class="project-img">
+                  <div className="project-img">
                     <img
                       className="img-fluid "
                       src="/featured/capture.jpg"

@@ -8,7 +8,7 @@ export default class Aside extends Component {
       <>
         <div
           className="aside aside-left animate__animated animate__fadeInLeft"
-          style={{ "animation-delay": "0.7s" }}
+          style={{ imationDelay: "0.7s" }}
         >
           <div className="wrapper">
             {socialMedia &&
@@ -23,7 +23,7 @@ export default class Aside extends Component {
         </div>
         <div
           className="aside  aside-right animate__animated animate__fadeInRight"
-          style={{ "animation-delay": "0.7s" }}
+          style={{ imationDelay: "0.7s" }}
         >
           <div className="wrapper">
             <a href={`mailto:${email}`} target="_blank">

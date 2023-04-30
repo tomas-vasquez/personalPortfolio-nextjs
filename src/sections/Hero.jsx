@@ -26,14 +26,14 @@ const Hero = () => {
           <ScrollAnimation animateIn="animate__fadeInUp">
             <p
               className="mb-4 animate__animated animate__fadeInUp"
-              style={{ "animation-delay": "0.7s" }}
+              style={{ imationDelay: "0.7s" }}
             >
               I'm a software engineer based in Bolivia specializing in building
               web sites and applications and everything in between.
             </p>
             <p
               className="mb-4 animate__animated animate__fadeInUp"
-              style={{ "animation-delay": "0.8s" }}
+              style={{ imationDelay: "0.8s" }}
             >
               I'm a software engineer based in Bolivia specializing in building
               web sites and applications and everything in between.
@@ -44,7 +44,7 @@ const Hero = () => {
             <dir className="d-flex p-0">
               <a
                 className="btn btn-primary email-link mt-4 mx-auto mx-md-0 animate__animated animate__fadeInUp"
-                style={{ "animation-delay": "0.7s" }}
+                style={{ imationDelay: "0.7s" }}
               >
                 Get In Touch
               </a>

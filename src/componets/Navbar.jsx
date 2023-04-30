@@ -56,8 +56,13 @@ const myNavbar = () => {
           </NavItem>
           <NavItem>
             <Link
-              href="domain"
-              style={{ "animation-delay": "0.2s" }}
+              href="#about"
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.getElementById("about");
+                element.scrollIntoView({ behavior: "smooth" });
+              }}
+              style={{ imationDelay: "0.2s" }}
               className="nav-item nav-link animate__animated animate__fadeInDown"
             >
               About
@@ -66,18 +71,28 @@ const myNavbar = () => {
 
           <NavItem>
             <Link
-              href="contact.html"
-              style={{ "animation-delay": "0.3s" }}
+              href="#projects"
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.getElementById("projects");
+                element.scrollIntoView({ behavior: "smooth" });
+              }}
+              style={{ imationDelay: "0.3s" }}
               className="nav-item nav-link animate__animated animate__fadeInDown"
             >
-              Work
+              Projects
             </Link>
           </NavItem>
           <NavItem>
             <Link
               href="#contact"
-              style={{ "animation-delay": "0.5s" }}
+              style={{ imationDelay: "0.5s" }}
               className="nav-item nav-link animate__animated animate__fadeInDown"
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.getElementById("contact");
+                element.scrollIntoView({ behavior: "smooth" });
+              }}
             >
               Contact
             </Link>

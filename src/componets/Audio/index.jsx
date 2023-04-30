@@ -13,10 +13,14 @@ function Audio(props) {
     Player.tracks = tracks;
     Player.autoplay = true;
     Player.init();
+
     if (isReady && !isPlaying) {
       setIsPlaying(true);
-      const playButton = document.querySelector(".play");
-      playButton.click();
+      Player.initHandlers();
+      Player.play();
+      // Player.nextTrack();
+      // const playButton = document.querySelector(".play");
+      // playButton.click();
     }
   }, [isReady]);
 

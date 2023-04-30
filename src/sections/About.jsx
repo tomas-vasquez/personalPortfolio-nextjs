@@ -38,10 +38,11 @@ export default class About extends Component {
                 <ul className="skills-list">
                   {skills.map((skill, index) => (
                     <ScrollAnimation
+                      key={index}
                       animateIn="animate__fadeInUp"
                       delay={index * 200}
                     >
-                      <li key={index}>
+                      <li>
                         <Icons
                           icon={skill}
                           style={{

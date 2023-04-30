@@ -37,14 +37,14 @@ module.exports = {
 
   tracks: [
     {
+      song: "Ella Baila Sola",
+      artist: "Eslabon Armado y Peso Pluma",
+      url: "songs/Ella Baila Sola - (Video Oficial) - Eslabon Armado y Peso Pluma - DEL Records 2023.mp3",
+    },
+    {
       song: "Four-Seasons-Winter-LInv",
       artist: "Vivaldi",
       url: "songs/Vivaldi-Four-Seasons-Winter-LInv.mp3",
-    },
-    {
-      song: "Four-Seasons-Winter-LInv2",
-      artist: "Vivaldi",
-      url: "Vivaldi-Four-Seasons-Winter-LInv.mp3",
     },
   ],
 
@@ -84,5 +84,5 @@ module.exports = {
     },
   ],
 
-  skills: ["react", "nextjs", "javascript", "Vue", "Node.js", "WordPress"],
+  skills: ["react", "nextjs", "javascript", "css", "javascript"],
 };
