@@ -19,6 +19,32 @@
     grid-template-rows: repeat(6, 1fr)
     align-items: center
 
+  .project-title
+    font-size: 1.5rem
+    margin-bottom: 10px
+    color: #eee
+
+  .project-details
+    font-size: 17px
+    line-height: 1.5
+    color: #aaa
+
+  .project-description
+    margin: 0
+
+    ul
+      display: flex
+      margin-bottom: 0
+      padding: 0px
+      list-style: none
+      flex-direction: row-reverse
+      margin-bottom: 0
+
+    li
+      margin-left: 20px
+      color: #aaa
+      font-family: monospace
+
   .project-content
     position: relative
     grid-column: 1 / -1
@@ -41,33 +67,6 @@
       grid-row: 1 / -1
       grid-column: 6 / -1
       border-top-right-radius: 10px
-
-    .project-label
-      color: #64ffda
-      font-family: monospace
-
-    .project-title
-      font-size: 1.5rem
-      margin-bottom: 10px
-      color: #eee
-
-    .project-details
-      font-size: 17px
-      line-height: 1.5
-      color: #aaa
-
-      .project-description
-        margin: 0
-
-        ul
-          display: flex
-          margin-bottom: 0
-          padding-left: 15px
-
-        li
-          margin-right: 30px
-          color: #aaa
-          font-family: monospace
 
   .project-img
     position: relative
@@ -114,9 +113,58 @@
         grid-column: 1 / 8
         border-top-right-radius: 10px
         border-top-left-radius: 10px
+    .project-description
+      ul
+        flex-direction: row
+      li
+        margin-left: 0px
+        margin-right: 20px
 
     .project-img
-
       @media screen and (min-width: 1200px)
         grid-row: 1 / -1
         grid-column: 6 / -1
+
+  .card
+    height: 100%
+    width: 100%
+    padding: 10px
+    background-color: rgba(10, 25, 47, 0.8)
+    backdrop-filter: blur(10px)
+    box-shadow: 0 10px 30px -10px var(--navy-shadow)
+    border-radius: 10px
+    transition: 0.3s
+
+  .card-header
+    border-bottom: 0
+
+  .card-body
+    padding: 10px
+    margin-bottom: 1.3rem
+
+  .card-footer
+    border-bottom: 0
+    margin: 0
+    display: flex
+    width: 100%
+    flex-direction: row-reverse
+    bottom: 0
+    position: absolute
+
+    ul
+      display: flex
+      margin: 0
+      padding: 0px
+      list-style: none
+
+    li
+      font-size: 14px
+      margin-left: 12px
+      color: #aaa
+      font-family: monospace
+  a
+    &:hover
+      transform: scale(1.07)
+      h4
+        text-decoration: underline
+        color: var(--green)

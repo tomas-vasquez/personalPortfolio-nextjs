@@ -46,14 +46,14 @@ const myNavbar = () => {
       <NavbarToggler onClick={toggleNavbar} className="me-2" />
       <Collapse isOpen={!collapsed} navbar>
         <Nav navbar className="ms-auto py-2 py-lg-0">
-          <NavItem>
+          {/* <NavItem>
             <Link
               href="domain"
               className="nav-item nav-link animate__animated animate__fadeInDown"
             >
               Begin
             </Link>
-          </NavItem>
+          </NavItem> */}
           <NavItem>
             <Link
               href="#about"

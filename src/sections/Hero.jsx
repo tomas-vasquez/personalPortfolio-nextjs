@@ -4,6 +4,7 @@ import IsReadyContext from "../contexts/IsReadyContext";
 import { Col } from "reactstrap";
 import ScrollAnimation from "react-animate-on-scroll";
 import Typist from "react-typist";
+import { email } from "@/config";
 
 const Hero = () => {
   return (
@@ -24,7 +25,7 @@ const Hero = () => {
             <Typist>
               <span>I am a </span>
               <span>web developer</span>
-              <Typist.Backspace count={13} delay={500} />
+              <Typist.Backspace count={13} delay={1000} />
               <span>backend developer</span>
               <Typist.Backspace count={17} delay={500} />
               <span>fullstack developer</span>
@@ -48,6 +49,7 @@ const Hero = () => {
               <a
                 className="btn btn-primary email-link mt-4 mx-auto mx-md-0 animate__animated animate__fadeInUp"
                 style={{ imationDelay: "0.7s" }}
+                href={`mailto:${email}`}
               >
                 Get In Touch
               </a>
