@@ -1,4 +1,4 @@
-import Audio from "@/componets/audio";
+import Audio from "@/componets/Audio";
 import { useContext } from "react";
 import IsReadyContext from "../contexts/IsReadyContext";
 import { Col } from "reactstrap";
