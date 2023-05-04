@@ -32,12 +32,14 @@ export default class BigProject extends Component {
               </div>
 
               <a
+                target={project.externalLink}
                 href={project.externalLink}
                 className="btn btn-primary mt-4 py-1 px-4 me-2"
               >
                 preview <Icons icon="external" />
               </a>
               <a
+                target={project.codeLink}
                 href={project.codeLink}
                 className="btn btn-primary mt-4 py-1 px-4"
               >

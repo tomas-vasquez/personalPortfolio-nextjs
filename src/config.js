@@ -37,19 +37,29 @@ module.exports = {
 
   tracks: [
     {
-      song: "Ella Baila Sola",
-      artist: "Eslabon Armado y Peso Pluma",
-      url: "songs/Ella Baila Sola - (Video Oficial) - Eslabon Armado y Peso Pluma - DEL Records 2023.mp3",
-    },
-    {
-      song: "Winter (A.L.T.C. Remix)",
+      song: "L'Olimpiade",
       artist: "Vivaldi",
-      url: "songs/Winter - Vivaldi (A.L.T.C. Remix).mp3",
+      url: "songs/VIVALDI __ 'L'Olimpiade,.mp3",
     },
     {
       song: "Four-Seasons-Winter-LInv",
       artist: "Vivaldi",
       url: "songs/Vivaldi-Four-Seasons-Winter-LInv.mp3",
+    },
+    {
+      song: "Violin-Concerto",
+      artist: "Vivaldi",
+      url: "songs/Vivaldi-Violin-Concerto-in-A-min.mp3",
+    },
+    {
+      song: "L'estro Armonico",
+      artist: "Vivaldi",
+      url: "songs/Vivaldi-Opus-3-no-6-in-A-minor-L_2.mp3",
+    },
+    {
+      song: "Flute-Concerto",
+      artist: "Vivaldi",
+      url: "songs/Vivaldi-Flute-Concerto-La-notte.mp3",
     },
   ],
 
