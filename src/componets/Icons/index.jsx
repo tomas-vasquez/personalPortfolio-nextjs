@@ -53,8 +53,11 @@ import { GiMongolia } from "react-icons/gi";
 import Mongo from "./mongodb-svgrepo-com.svg";
 import Mysql from "./mariadb-svgrepo-com.svg";
 import Next from "./nextjs-fill-svgrepo-com.svg";
+import Astro from "./astro-logo-icon.svg";
+import Firebase from "./firebase-svgrepo-com.svg";
 
 import Image from "next/image";
+import { InMemoryCache } from "@apollo/client";
 
 const getIcon = (icon) => {
   switch (icon) {
@@ -207,6 +210,14 @@ export default (props) => {
 
     case "nextjs":
       icon = Next;
+      break;
+
+    case "astro":
+      icon = Astro;
+      break;
+
+    case "firebase":
+      icon = Firebase;
       break;
   }
 

@@ -71,33 +71,61 @@ module.exports = {
 
   projects: [
     {
-      title: "MyAcademia",
+      title: 'Open Academy  "NextJs"',
       details:
         "The biggest project that I will carry out, an online education platform made with React and Next.js on the frontend; Express.js and MongoDB in the backend; Electron and React in the administrative tool.",
       imgSrc: "/featured/capture.jpg",
-      techList: ["react", "nextjs", "javascript"],
+      techList: ["nextjs", "react", "sass", "firebase"],
       externalLink: "https://open-academy.vercel.app/",
       codeLink: "https://github.com/tomasdetloging/openacademy-nextjs",
     },
     {
-      title: "MyAcademia2",
+      title: "Electronicos Store",
       details:
-        "The biggest project that I will carry out, an online education platform made with React and Next.js on the frontend; Express.js and MongoDB in the backend; Electron and React in the administrative tool.",
-      imgSrc: "/featured/capture.jpg",
+        "A small and customizable online store capable of being hosted on a static page server; built with the purpose that its maintenance is economical.",
+      imgSrc: "/featured/Untitled.png",
       techList: ["react", "nextjs", "javascript"],
-      externalLink: "https://open-academy.vercel.app/",
-      codeLink: "https://github.com/tomasdetloging/openacademy-nextjs",
+      externalLink: "https://store-nextjs.vercel.app/",
+      codeLink: "https://github.com/tomas-vasquez/store-nextjs",
     },
     {
-      title: "MyAcademia3",
+      title: "Developer Portafolio",
       details:
-        "The biggest project that I will carry out, an online education platform made with React and Next.js on the frontend; Express.js and MongoDB in the backend; Electron and React in the administrative tool.",
-      imgSrc: "/featured/capture.jpg",
+        "Fully customizable portfolio for developers, ready to adapt to any profile just by editing a single configuration file.",
+      imgSrc: "/featured/capture (2).jpg",
       techList: ["react", "nextjs", "javascript"],
-      externalLink: "https://open-academy.vercel.app/",
-      codeLink: "https://github.com/tomasdetloging/openacademy-nextjs",
+      externalLink: "https://tomas-dev.vercel.app/",
+      codeLink: "https://github.com/tomas-vasquez/OpenPortafolio",
+    },
+    {
+      title: "Open Trello",
+      details:
+        "Fully customizable portfolio for developers, ready to adapt to any profile just by editing a single configuration file.",
+      imgSrc: "/featured/capture (1).jpg",
+      techList: ["react", "nextjs", "javascript"],
+      externalLink: "https://open-trello.vercel.app/",
+      codeLink: "https://github.com/tomas-vasquez/OpenTrello",
+    },
+    {
+      title: "Youtube Clone",
+      details:
+        "Fully customizable portfolio for developers, ready to adapt to any profile just by editing a single configuration file.",
+      imgSrc: "/featured/capture (6).jpg",
+      techList: ["react", "nextjs", "javascript"],
+      externalLink:
+        "https://youtube-clone-git-master-tomasdetloging.vercel.app/",
+      codeLink: "https://github.com/tomas-vasquez/Youtube-Clone",
     },
   ],
 
-  skills: ["html5", "react", "nextjs", "mongo", "mysql", "docker"],
+  skills: [
+    "html5",
+    "react",
+    "nextjs",
+    "astro",
+    "firebase",
+    "mongo",
+    "mysql",
+    "docker",
+  ],
 };

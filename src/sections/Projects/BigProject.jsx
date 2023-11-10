@@ -21,7 +21,7 @@ export default class BigProject extends Component {
         >
           <div className="project-content shadow">
             <div className="project-details">
-              <h4 className="project-title">{project.title}</h4>
+              <h4 className="project-title mb-3">{project.title}</h4>
               <div className="project-description">
                 <p>{project.details}</p>
                 <ul>
@@ -49,7 +49,7 @@ export default class BigProject extends Component {
           </div>
 
           <div className="project-img shadow">
-            <img className="img-fluid " src="/featured/capture.jpg" alt="" />
+            <img className="img-fluid" src={project.imgSrc} alt="" />
           </div>
         </div>
       </ScrollAnimation>

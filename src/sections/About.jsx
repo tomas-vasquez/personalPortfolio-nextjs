@@ -41,13 +41,13 @@ export default class About extends Component {
                       animateOnce
                       key={index}
                       animateIn="animate__fadeInUp"
-                      delay={index * 200}
+                      delay={index * 250}
                     >
                       <li>
                         <Icons
                           icon={skill}
                           style={{
-                            fontSize: "50px",
+                            fontSize: "45px",
                             color: "var(--colorText)",
                           }}
                         />
